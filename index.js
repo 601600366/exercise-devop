@@ -14,4 +14,8 @@ app.listen(port, () => {
     console.log(`Start Express application at ${port}`)
 })
 
+app.get('/items', (req, res) => {
+    return res.json(items)
+})
+
 module.exports = app
